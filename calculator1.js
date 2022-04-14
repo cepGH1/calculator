@@ -1,9 +1,11 @@
-`strict`
+alert("what the fuck");
 const outputDiv = document.querySelector("#outputDiv");
 const one = document.querySelector("#one");
-const buttonOne = document
+const buttonOne = document.querySelector("#buttonOne");
+const test = document.querySelector("#test");
 
 one.addEventListener(onclick, pressNumber);
+buttonOne.addEventListener(onclick, pressNumber);
 
 
 let runningTotal=null;
@@ -12,10 +14,13 @@ let numberOfNumbers = 0;
 let operationHistory =[];
 let numberOfOperations = 0;
 
-
+// function to test the script 
+function test(){
+    test.innerHTML = "hello world";
+}
 // function to collectnumbers and put on output screen
 function pressNumber(){
-    outputDiv.textContent = "hello world";
+    outputDiv.innerHTML = "hello world";
 
 }
 //function to use the number on the text area in an arithmetic operation

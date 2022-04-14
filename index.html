@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="./style.css">
+    
 </head>
 <body>
     <header>
         <h1>Calculator</h1>
     </header>
+    <div id="test">test</div>
     <div id="outputDiv">output div</div>
     <div id="keyboard">
         <div class="grid-container">
-            <div class="grid-item" id="seven">7</div>
+            <div class="grid-item" id="seven" onclick="test()">7</div>
             <div class="grid-item" id="eight">8</div>
             <div class="grid-item" id="nine">9</div>
             <div class="grid-item" id="four">4</div>
@@ -46,6 +48,10 @@
         </div>
 
     </div>
- <script src="./calculator1.js"></script>  
+    
 </body>
+<script src="./newOne.js" ></script>
+<script src="./callbacksAndPromises.js"></script>
+<script src="./mycalculator.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
 </html>
