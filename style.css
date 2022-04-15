@@ -13,7 +13,7 @@ header{
   }
   .grid-container2{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto ;
     background-color: #2196F3;
     padding: 10px;
   }
@@ -33,8 +33,12 @@ header{
     width:25vw;
     float:left;
   }
-  #buttonOne{
-      color:purple;
+  #outputDiv{
+    border: solid;
+    border-color: blue;
+    border-radius: 2px;
+    width: 70vw;
+    height:100px;
   }
   #one{
       color:black;
