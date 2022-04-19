@@ -31,7 +31,7 @@ plus.addEventListener("click", add);
 
 
 let runningTotal=null;
-let numberHistory =[];
+let history =[];
 let numberOfNumbers = 0;
 let operationHistory =[];
 let numberOfOperations = 0;
@@ -92,15 +92,15 @@ function clearAll(){
     operatorPushed=false;
     clearAll = true;
     numberOfNumbers = 0;
-    
+    history =[];
     runningTotal = null;
     outputDiv.textContent = "";
 }
-function add(){
+function add(myNum){
     numberOfNumbers++;
     operatorPushed = true;
     let myNum = parseFloat(outputDiv.textContent);
-    numberHistory.push(myNum);
+    history.push(myNum);
     runningTotal += myNum;
     outputDiv.textContent = runningTotal;
 
